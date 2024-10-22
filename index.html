@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Saver</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Saver</h1>
+
+    <button id="toggle-theme">Toggle Dark Mode</button><br>
+
+    <form id="password-form">
+      <input type="text" id="website-name" placeholder="Website Name" required />
+      <input type="text" id="username" placeholder="Username" required />
+
+      <div class="password-input">
+        <input type="password" id="password" placeholder="Password" required />
+        <span id="toggle-password">👁️</span>
+      </div>
+
+      <button type="submit">Save Password</button>
+    </form>
+
+    <input type="text" id="search-bar" placeholder="Search Website" />
+
+    <div class="saved-passwords">
+      <h2>Saved Passwords</h2>
+      <ul id="password-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
